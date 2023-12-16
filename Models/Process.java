@@ -1,7 +1,5 @@
 package Models;
 
-import Enums.SchedulingAlgorithm;
-
 public class Process {
     public int processId;
     public int priority;
