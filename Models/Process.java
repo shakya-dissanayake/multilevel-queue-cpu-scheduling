@@ -23,7 +23,7 @@ public class Process {
                 " (Priority " + priority + "):" +
                 " Algorithm = " + SchedulingAlgorithm.values()[priority] +
                 ", Arrival Time = " + arrivalTime +
-                ", Burst Time = " + burstTime + "+" +
+                ", Burst Time = " + burstTime +
                 ", Waiting Time = " + waitingTime;
     }
 }
