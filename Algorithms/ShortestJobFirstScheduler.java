@@ -1,6 +1,6 @@
 package Algorithms;
 
-import Intefaces.SchedulingAlgorithm;
+import Interfaces.SchedulingAlgorithm;
 import java.util.Comparator;
 import Models.Process;
 import java.util.Queue;

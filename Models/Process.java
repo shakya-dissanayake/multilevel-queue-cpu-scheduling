@@ -4,7 +4,7 @@ import Enums.SchedulingAlgorithm;
 
 public class Process {
     public int processId;
-    int priority;
+    public int priority;
     public int arrivalTime;
     public int burstTime;
     public int waitingTime;

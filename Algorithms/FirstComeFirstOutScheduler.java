@@ -1,7 +1,7 @@
 package Algorithms;
 
 import java.util.Queue;
-import Intefaces.SchedulingAlgorithm;
+import Interfaces.SchedulingAlgorithm;
 import Models.Process;
 
 public class FirstComeFirstOutScheduler implements SchedulingAlgorithm {

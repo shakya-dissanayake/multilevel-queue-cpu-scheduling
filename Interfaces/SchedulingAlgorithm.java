@@ -1,4 +1,4 @@
-package Intefaces;
+package Interfaces;
 import java.util.Queue;
 import Models.Process;
 
