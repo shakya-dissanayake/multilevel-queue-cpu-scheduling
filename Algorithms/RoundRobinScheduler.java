@@ -24,7 +24,7 @@ class RoundRobinScheduler implements SchedulingAlgorithm {
         } else {
             scheduler.updateTime(process.burstTime);  // Update time using scheduler instance
             process.burstTime = 0;
-            System.out.println("Process " + process.processId + " completed.");
+            System.out.println("\u001B[32mProcess " + process.processId + " completed.\u001B[0m");
         }
     }
 }

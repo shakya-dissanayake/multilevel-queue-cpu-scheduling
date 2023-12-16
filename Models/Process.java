@@ -1,5 +1,7 @@
 package Models;
 
+import Enums.SchedulingAlgorithm;
+
 public class Process {
     public int processId;
     public int priority;
@@ -17,7 +19,11 @@ public class Process {
 
     @Override
     public String toString() {
-        return "Process " + processId + " (Priority " + priority + "): Arrival Time = " + arrivalTime +
-                ", Burst Time = " + burstTime + ", Waiting Time = " + waitingTime;
+        return "Process " + processId +
+                " (Priority " + priority + "):" +
+                " Algorithm = " + SchedulingAlgorithm.values()[priority] +
+                ", Arrival Time = " + arrivalTime +
+                ", Burst Time = " + burstTime + "+" +
+                ", Waiting Time = " + waitingTime;
     }
 }

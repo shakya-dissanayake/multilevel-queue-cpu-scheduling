@@ -51,7 +51,7 @@ public class MultilevelQueueScheduler {
             case 0 -> new RoundRobinScheduler(this);
             case 1 -> new ShortestJobFirstScheduler(this);
             case 2 -> new FirstComeFirstOutScheduler(this);
-            default -> throw new IllegalArgumentException("Invalid priority");
+            default -> throw new IllegalArgumentException("\u001B[31mInvalid priority\u001B[0m");
         };
     }
 

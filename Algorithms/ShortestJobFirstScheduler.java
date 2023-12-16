@@ -20,7 +20,7 @@ class ShortestJobFirstScheduler implements SchedulingAlgorithm {
             System.out.println("Executing " + process);
             process.waitingTime += scheduler.getTime() - process.arrivalTime;
             scheduler.updateTime(process.burstTime);  // Update time using scheduler instance
-            System.out.println("Process " + process.processId + " completed.");
+            System.out.println("\u001B[32mProcess " + process.processId + " completed.\u001B[0m");
         }
     }
 }

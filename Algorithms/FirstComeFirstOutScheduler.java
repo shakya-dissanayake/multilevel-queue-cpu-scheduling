@@ -18,6 +18,6 @@ public class FirstComeFirstOutScheduler implements SchedulingAlgorithm {
         assert process != null;
         process.waitingTime += scheduler.getTime() - process.arrivalTime;
         scheduler.updateTime(process.burstTime);  // Update time using scheduler instance
-        System.out.println("Process " + process.processId + " completed.");
+        System.out.println("\u001B[32mProcess " + process.processId + " completed.\u001B[0m");
     }
 }
