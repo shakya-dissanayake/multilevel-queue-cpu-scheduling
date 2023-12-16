@@ -45,6 +45,7 @@ public class Main {
 
             processes.add(new Process(i, priority, arrivalTime, burstTime));
         }
+        System.out.println();
 
         MultilevelQueueScheduler scheduler = new MultilevelQueueScheduler(3);
 
