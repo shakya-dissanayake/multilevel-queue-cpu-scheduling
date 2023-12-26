@@ -18,7 +18,7 @@ The project includes classes representing processes (`Process`), a multilevel qu
 
     ```bash
     git clone https://github.com/shakya-dissanayake/multilevel-queue-cpu-scheduling.git
-    cd multilevel-queue-scheduling
+    cd multilevel-queue-cpu-scheduling
     ```
 
 2. Compile and run the Java program:
