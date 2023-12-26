@@ -56,21 +56,18 @@ public class MultilevelQueueScheduler {
     }
 
     private void ageProcesses() {
-        for (int i = 1; i < queues.size(); i++) {
+        for (int i = 1; i < queues.size(); i++) { // Start from the second queue (lower priority)
             Queue<Process> queue = queues.get(i);
             List<Process> processesToRemove = new ArrayList<>();
-
             for (Process process : queue) {
                 process.waitingTime++;
-
-                if (process.waitingTime >= 5) {
-                    process.priority = Math.max(process.priority - 1, 0);
+                if (process.waitingTime >= 5) { // Aging threshold
                     processesToRemove.add(process);
+                    process.priority = Math.max(process.priority - 1, 0);
+                    queues.get(process.priority).add(process);
                 }
             }
-
             queue.removeAll(processesToRemove);
-            queues.get(0).addAll(processesToRemove);
         }
     }
 }
