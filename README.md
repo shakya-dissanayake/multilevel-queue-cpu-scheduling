@@ -30,8 +30,35 @@ The project includes classes representing processes (`Process`), a multilevel qu
 
 ## Example
 
-The `Main` class demonstrates the usage of the multilevel queue scheduler with example processes. Feel free to modify the example processes in the `Main` class according to your requirements.
+The `Main` class demonstrates the usage of the multilevel queue scheduler with user-input processes. Follow the instructions to input details for each process, including priority and algorithm choice.
 
-```java
-// Your example processes here
+```
+Enter the number of processes: 2
+
+Enter details for Process 1:
+Priority: (0-->2 : highest-->lowest)
+	0: Round Robin
+	1: Shortest Job First
+	2: First Come, First Served
+> 0
+Arrival Time: 0
+Burst Time: 10
+
+Enter details for Process 2:
+Priority: (0-->2 : highest-->lowest)
+	0: Round Robin
+	1: Shortest Job First
+	2: First Come, First Served
+> 1
+Arrival Time: 0
+Burst Time: 5
+
+Executing Process 1 (Priority 0): Algorithm = RB, Arrival Time = 0, Burst Time = 10, Waiting Time = 0
+Executing Process 2 (Priority 1): Algorithm = SJF, Arrival Time = 0, Burst Time = 5, Waiting Time = 0
+Process 2 completed.
+Executing Process 1 (Priority 0): Algorithm = RB, Arrival Time = 0, Burst Time = 8, Waiting Time = 0
+Executing Process 1 (Priority 0): Algorithm = RB, Arrival Time = 0, Burst Time = 6, Waiting Time = 7
+Executing Process 1 (Priority 0): Algorithm = RB, Arrival Time = 0, Burst Time = 4, Waiting Time = 16
+Executing Process 1 (Priority 0): Algorithm = RB, Arrival Time = 0, Burst Time = 2, Waiting Time = 27
+Process 1 completed.
 ````
